@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account</title>
+  <link rel="stylesheet" href="create_account.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Create Account</h2>
+    <form id="createAccountForm">
+      <input type="text" id="fullname" placeholder="Full name" required />
+
+      <input type="email" id="email" placeholder="Email" required />
+      <div class="error" id="emailError"></div>
+
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" required />
+        <span class="toggle-password" data-target="password">👁</span>
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="confirmPassword" placeholder="Confirm password" required />
+        <span class="toggle-password" data-target="confirmPassword">👁</span>
+      </div>
+      <div class="error" id="passwordError"></div>
+
+      <button type="submit" id="submitBtn" disabled>Create Account</button>
+    </form>
+
+    <p>Already have an account? <a href="#">Sign in</a></p>
+  </div>
+
+  <script src="create_account.js"></script>
+</body>
+</html>
