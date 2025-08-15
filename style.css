@@ -1,0 +1,112 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6e6464;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 4px;
+    width: 350px;
+}
+
+.card h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+.password-wrapper {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.password-wrapper input {
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+    width: 100%;
+    padding-right: 35px; /* Space for the toggle eye icon */
+    box-sizing: border-box;
+}
+
+.toggle-eye {
+    position: absolute;
+    right: 10px; /* space fpr icon */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+    color: #666; /* Default color for the icon */
+}
+
+.toggle-eye.active {
+    color: green; /* Color when the eye is active */
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 2px;
+    font-size: 14px;
+}
+
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 6px;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+.message {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+.success { color: green;}
+.error { color: red;}
