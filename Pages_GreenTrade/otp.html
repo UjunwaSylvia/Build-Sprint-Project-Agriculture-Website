@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Verification</title>
+  <link rel="stylesheet" href="css/style_PLC.css">
+</head>
+<body>
+  <div class="page-card">
+    <h2>Payment</h2>
+    <hr >
+
+        <!-- Payment Options -->
+    <div class="payment-options">
+      <p class="pay-with-label">Pay With:</p>
+      <label><input type="radio" name="payment" checked> Card</label>
+      <label><input type="radio" name="payment"> Bank</label>
+      <label><input type="radio" name="payment"> Transfer</label>
+    </div>
+
+
+    <p class="otp-instruction">Enter 4-digit OTP to confirm this payment</p>
+
+    <!-- 4 separate boxes -->
+    <div class="otp-row">
+      <input type="text" maxlength="1" class="otp-digit" inputmode="numeric">
+      <input type="text" maxlength="1" class="otp-digit" inputmode="numeric">
+      <input type="text" maxlength="1" class="otp-digit" inputmode="numeric">
+      <input type="text" maxlength="1" class="otp-digit" inputmode="numeric">
+    </div>
+
+    <!-- Narrow centered button -->
+    <button class="btn btn-narrow">Confirm Payment</button>
+
+    <p class="note">
+      Your personal data will be used to process your order, support your
+      experience throughout this website, and for other purposes described
+      in our privacy policy.
+    </p>
+  </div>
+</body>
+</html>
