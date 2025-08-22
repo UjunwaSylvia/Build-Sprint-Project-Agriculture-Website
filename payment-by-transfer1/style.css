@@ -1,0 +1,190 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #8c8686; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+form {
+  color: #ACACAC;
+}
+
+.general {
+  width: 400px;
+  background: #5e7b59;   
+  color: #fff;
+  border-radius: 6px;
+  padding: 28px 30px;
+  height: 75vh;
+  line-height: 40px;
+}
+
+.general h2 {
+  border-bottom: 2px solid #ACACAC;
+  margin: 0 0 8px;
+  color: #0b0b0b;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.general h3 {
+  margin: 0 0 8px;
+  color: #0b0b0b;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.general label {
+  margin-right: 16px;
+}
+
+.general input[type="radio"] {
+  transform: translateY(1px);
+  margin-right: 6px;
+  color: #ACACAC;
+}
+
+.total {
+  text-align: center;
+}
+
+.total p {
+  color: #ACACAC;
+}
+
+.total h5 {
+  color: #0A0D13;
+  font-size: 20px;
+}
+
+.total button {
+  background-color: #32C770;
+  width: 100%;
+  color: #F3F3F3;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.main h4 {
+  font-size: 27px;
+  color: #0A0D13;
+}
+
+b {
+  color: #FF3D3D;
+}
+
+.fa-copy {
+  font-size: 15px;
+  color: #ACACAC;
+}
+
+.paragraph {
+  color: #ACACAC;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1440px) {
+  .general {
+    width: 400px;
+    height: 75vh;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 1115px) {
+  .general {
+    width: 400px;
+    height: 75vh;
+    line-height: 35px;
+  }
+
+  .total button {
+    padding: 12px 0;
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .paragraph {
+    color: #ACACAC;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 20px;
+  }
+
+  .main h4 {
+    font-size: 20px;
+  }
+
+  .total h5 {
+    font-size: 16px;
+  }
+
+  .general label {
+    font-size: 12px;
+  }
+
+  .total p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .general {
+    width: 250px;
+    height: 80vh;
+    line-height: 30px;
+  }
+
+  .total button {
+    padding: 12px 0;
+    margin-top: 50px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .paragraph {
+    color: #ACACAC;
+    font-size: 12px;
+    line-height: 17px;
+    margin-top: 20px;
+  }
+
+  .main h4 {
+    font-size: 20px;
+  }
+
+  .total h5 {
+    font-size: 16px;
+  }
+
+  .general label {
+    font-size: 12px;
+  }
+
+  .total p {
+    font-size: 12px;
+  }
+}
