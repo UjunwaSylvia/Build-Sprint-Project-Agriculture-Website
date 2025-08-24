@@ -5,8 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="../contact-us-page/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div></div>
+  <div class="page-card">
+    <h2>Contact us</h2>
+
+    <!-- Contact Us Options -->
+    <div class="payment-options">
+      <p class="pay-with-label">Reply to;</p>
+      <label><input type="radio" name="contact" checked> Complaint</label>
+      <label><input type="radio" name="contact"> Feedback</label>
+      <label><input type="radio" name="contact"> Suggestion</label>
+    </div>
+
+    <div class="payment-form">
+      <label for="card-number" class="number">Full name</label>
+      <input type="text" id="card-number" placeholder="John Doe">
+
+      <div class="payment-row">
+        <div>
+          <label for="expiry" class="number">Phone number</label>
+          <input type="text" id="expiry" placeholder="7080869864">
+        </div>
+        <div>
+          <label for="cvv" class="number">Subject</label>
+          <input type="text" id="cvv" placeholder="One word">
+        </div>
+      </div>
+
+      <label class="save-card">
+        <input type="checkbox">   Agree to terms
+      </label>
+
+      <button class="place-order">SUBMIT</button>
+
+      <p class="note">
+        If you have a complaint or a suggestion/ feedback. Fill the form and we respond as soon as possible.
+      </p>
+    </div>
+  </div>
 </body>
 </html>
