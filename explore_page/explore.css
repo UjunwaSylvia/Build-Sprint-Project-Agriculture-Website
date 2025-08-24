@@ -1,0 +1,218 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #3ab54a; /* Green color from image */
+    color: white;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.search-container input {
+    width: 60%;
+    max-width: 500px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: #fdd835; /* Yellow color */
+    color: #333;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header-nav a i {
+    margin-right: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/farm-background.jpg'); /* Add a farm background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.hero::before { /* Overlay for text readability */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+/* Products Grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 40px 5%;
+    background-color: #fff;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 0.9em;
+    margin: 5px 0;
+}
+
+.product-card p {
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.add-to-cart-btn {
+    background: none;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Order Status Section */
+.order-status {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #eee;
+}
+
+.status-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #333;
+    color: #ccc;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+}
+
+.footer-contact, .footer-center, .footer-links {
+    flex: 1;
+    min-width: 280px;
+    padding: 10px;
+}
+
+.footer-contact h4, .footer-links h4 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-contact p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+}
+
+.footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.footer-center input {
+    background-color: #555;
+    border: 1px solid #666;
+    padding: 10px;
+    width: 60%;
+    color: white;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
