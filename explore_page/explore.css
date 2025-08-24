@@ -16,7 +16,7 @@ header {
 }
 
 .logo img {
-    height: 40px;
+    height: 90px;
 }
 
 .search-container {
@@ -56,7 +56,7 @@ header {
 
 /* Hero Section */
 .hero {
-    background-image: url('images/farm-background.jpg'); /* Add a farm background image */
+    background-image: url('../assets/images/background-image.png'); /* Add a farm background image */
     background-size: cover;
     background-position: center;
     color: white;

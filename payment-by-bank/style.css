@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #5e7b59; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.page-card {
+  width: 400px;
+  background: #5e7b59;   
+  color: #fff;
+  border-radius: 6px;
+  padding: 28px 30px;
+  height: 80vh;
+  line-height: 40px;
+}
+
+.page-card h2 {
+  border-bottom: 1px solid #ACACAC;
+  margin: 0 0 8px;
+  color: #0b0b0b;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.pay-with-label {
+  margin-bottom: 5px;
+  font-weight: 600px;
+  color: black;
+  margin-left: 0%;
+  font-size: 17px;
+}
+
+.payment-options {
+  margin: 0 0 14px;
+  color: #e9e9e9;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.payment-options .label {
+  margin-right: 8px;
+  color: #e9e9e9;
+}
+
+.payment-options label {
+  margin-right: 17px;
+  font-size: 17px;
+  cursor: default;
+  color: #ACACAC;
+}
+
+.payment-options input[type="radio"] {
+  transform: translateY(1px);
+  margin-right: 6px;
+  cursor: pointer;
+}
+
+.main select {
+  width: 100%;
+  background-color: #5e7b59;
+  border: 2px solid #ACACAC;
+  padding: 10px 0;
+  color: #ACACAC;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.total button {
+  background-color: #32C770;
+  width: 100%;
+  color: #F3F3F3;
+  padding: 15px 0;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.total p {
+  color: #ACACAC;
+  font-size: 12px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+
+.major p {
+  color: #0A0D13;
+  margin-top: 20px;
+}
+
+.major ::placeholder {
+  color: #ACACAC;
+}
+
+.major input {
+  width: 100%;
+  background-color: #5e7b59;
+  border: 2px solid #ACACAC;
+  color: #ACACAC;
+  padding: 10px 0;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 425px) {
+  .page-card {
+    width: 300px;
+  }
+
+  .payment-options label {
+    margin-right: 17px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .main select {
+    padding: 7px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+
+  .total button {
+    padding: 10px 0;
+  }
+
+  .total p {
+    color: #ACACAC;
+    font-size: 11px;
+    line-height: 22px;
+    margin-top: 20px;
+  }
+
+  .major p {
+    color: #0A0D13;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .major ::placeholder {
+    color: #ACACAC;
+  }
+
+  .major input {
+    width: 100%;
+    background-color: #5e7b59;
+    border: 2px solid #ACACAC;
+    color: #ACACAC;
+    padding: 7px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+  }
+}
