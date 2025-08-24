@@ -22,6 +22,10 @@ body {
   line-height: 60px;
 }
 
+.page-card p {
+  font-weight: 700;
+}
+
 .page-card h2 {
   border-bottom: 1px solid #ACACAC;
   margin: 0 0 8px;
@@ -39,10 +43,17 @@ body {
 }
 
 .payment-options {
+  display: flex;
+  flex-direction: row;
   margin: 0 0 14px;
   color: #e9e9e9;
   font-size: 14px;
   font-weight: 600;
+}
+
+.payment-options a {
+  text-decoration: none;
+  color: #ACACAC;
 }
 
 .payment-options .label {

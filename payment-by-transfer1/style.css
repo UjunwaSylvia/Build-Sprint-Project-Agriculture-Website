@@ -66,6 +66,10 @@ form {
   font-size: 20px;
 }
 
+.total a {
+  text-decoration: none;
+}
+
 .total button {
   background-color: #32C770;
   width: 100%;

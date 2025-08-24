@@ -1,7 +1,7 @@
 //Select Elements
 const cartItemsElement = document.querySelector('.cart_item');
 const subTotalElement = document.getElementById('naira');
-const totalItemsElement = document.querySelector('.totalItemInCart');
+const totalItemsElement = document.getElementById('totalItemInCart');
 const itemCheckout = document.getElementById('checkout');
 const totalOrder = document.getElementById('total')
 
@@ -48,15 +48,15 @@ function renderCartItems() {
 // Render Subtotal
 function renderSubtotal() {
   let totalPrice = 0;
-  let totalItems = 0;
+  let totalItemsPrice = 0;
 
   cart.forEach((item) => {
-    totalPrice += item.price * item.numberOfUnits;
-    totalItems += item.numberOfUnits;
+    totalPrice += item.price 
+    totalItemsPrice += item.price - 1000;
   });
 
   subTotalElement.textContent = `₦${totalPrice}`;
-  totalItemsElement.textContent = totalItems;
+  totalItemsElement.textContent = `₦${totalItemsPrice}`;
 }
 
 // Remove Item
